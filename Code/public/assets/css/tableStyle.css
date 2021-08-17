@@ -1,0 +1,98 @@
+table {
+    width: 100%;
+    padding-top: 30px;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+    table td {
+      border-bottom: 1px solid #9faeb9;
+      padding: 5px 10px;
+      /* max-width: fit-content; */
+      text-align: left;
+      font-size: 12px;
+      text-align: -webkit-center;
+    }
+    
+    table tr{
+      background-color: #fefefe;
+    }
+    table tr:nth-child(even){background-color: #f4f7fc;}
+    
+    table tr:hover {background-color: rgb(236, 233, 233);}
+    
+    table th,
+    table th a {
+      padding: 10px;
+      text-align: center;
+      background-color:#07364d;
+      color: #FFFFFF;
+      border-right: 1px solid #8f9da8;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      
+    }
+  
+    table th a:hover {
+     
+      background-color:rgb(3, 3, 75,0.9);
+      color: #ece9e9;
+    }
+   
+    
+      
+      .content {
+        max-width: 95vw;
+          /* min-width: 1000px; */
+          margin: 0 auto;
+          padding: 2em 0;
+      }
+      .content h2 {
+        margin: 0;
+        padding: 25px 0;
+        font-size: 22px;
+        border-bottom: 1px solid #ebebeb;
+        color: #666666;
+      }
+      .content h3 {
+        color: #923992
+      }
+      td img{
+        max-width: 5vw;
+        /* min-width: 50px; */
+        height: 7vh;
+        /* width: 4em; */
+        object-fit: cover;
+        object-position: top;
+        /* border-radius: 50%; */
+        background-color: #dedede;
+      }
+      
+       td.actions .edit, td.actions .trash {
+        display: inline-flex;
+        text-align: center;
+        font-size: 11px;
+        text-decoration: none;
+        color: #FFFFFF;
+        padding: 7px 12px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        margin: 0 5px;
+      }
+       td.actions form{
+        display: inherit;
+        margin: 0 auto;
+      } 
+      td.actions .trash {
+        background-color: #d33131;
+      }
+       td.actions .trash:hover {
+        background-color: #8b2929;
+      }
+       td.actions .edit {
+        background-color: #21b175;
+      }
+      td.actions .edit:hover {
+        background-color: #148346;
+      }
+    

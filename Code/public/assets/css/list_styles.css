@@ -1,0 +1,80 @@
+  /*  List View */
+
+  .card.list {
+      flex-basis: 100%;
+      flex-direction: row;
+      align-items: flex-start;
+      overflow: unset;
+      width: 220px;
+  }
+
+  /* .list */
+
+  .date_wrapper.list {
+      font-size: 12px;
+      color: #0c1425;
+      display: flex;
+      gap: 30px;
+      font-weight: 600;
+  }
+
+  .id_info.list {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-content: space-evenly;
+      gap: 20px;
+      justify-content: space-between;
+      flex-basis: 30%;
+  }
+
+  .Lord_favourites.list {
+      position: unset;
+      right: unset;
+      top: unset;
+  }
+
+  .top50.list {
+      flex-direction: row-reverse;
+      flex-wrap: nowrap;
+      flex-basis: 28%;
+  }
+
+  .bottom50.list {
+      flex-basis: 70%;
+      flex-direction: row;
+      gap: 20px;
+      height: 100%;
+  }
+
+  .card__button.list {
+      align-self: center;
+      border-radius: 3px;
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      justify-content: center;
+      padding: 4px 5px;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 600;
+      width: 100%;
+  }
+
+  .card_footer.list {
+      display: flex;
+      border-top: none;
+      flex-wrap: wrap;
+      flex-basis: 25%;
+      gap: 10px;
+      align-content: space-between;
+  }
+
+  .card_image.list {
+      height: 15vh;
+      min-height: 10vh;
+      /* background-color: #a70a0a1a;
+      background-color: rgba(50, 85, 150, 0.1); */
+      flex-basis: 65%;
+  }

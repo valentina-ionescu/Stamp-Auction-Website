@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+}
+
+.sidebar {
+    margin-left: 15px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', "Helvetica Neue", Arial, sans-serif;
+}
+
+.label-toggle_filter {
+    display: none;
+    width: 26px;
+    margin-right: 10px;
+    z-index: 2;
+    position: relative;
+    color: var(--blue);
+    margin-top: -0.5em;
+    cursor: pointer;
+}
+
+img.label_img {
+    margin-left: 7px;
+}
+
+#toggle_filter {
+    display: none;
+    z-index: 2;
+}
+
+.flex_row {
+    display: flex;
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5em;
+    z-index: 1;
+}
+
+.filter_wrapper {
+    position: sticky;
+    top: 3rem;
+    padding: 0.75rem 1.25rem;
+    width: 278px;
+    color: rgba(0, 0, 0, 0.87);
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px #00000017;
+}
+
+.filter_wrapper h2 {
+    background-color: var(--blue);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: -0.75rem;
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+    margin-bottom: 2rem;
+    padding: 0.75rem 1.25rem;
+    text-align: center;
+    cursor: default;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.filter_wrapper form label {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+
+.filter_wrapper:hover h2 {
+    background-color: var(--medblue);
+    color: #FFFFFF;
+}
+
+.form_group {
+    margin-bottom: 2rem;
+    font-size: 14px;
+}
+.filter_form form input {
+    background-color: #efefef;
+}
+.form_select {
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #efefef;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #00000026;
+    border-radius: .25rem;
+    margin-top: 5px;
+    padding: 1px;
+}
+
+/* -------------------------------- */
+
+.range-slider {
+    margin: 5px 0 10px 0%;
+    width: 100%;
+}
+
+.range-slider__range {
+    -webkit-appearance: none;
+    height: 10px;
+    width: calc(100% - (40px + 12px));
+    border-radius: 5px;
+    background: #d7dcdf;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+.range-slider__range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--medblue);
+    cursor: pointer;
+}
+
+.range-slider__range::-webkit-slider-thumb:hover {
+    background: var(--dred);
+}
+
+.range-slider__range:active::-webkit-slider-thumb {
+    background: var(--dred);
+    border: 0;
+    border-radius: 50%;
+}
+
+.range-slider__range:focus::-webkit-slider-thumb {
+    background: var(--dred);
+    margin: 1px;
+    box-shadow: 0 0 0 2px #eeeeee, 0 0 0 4px var(--dred);
+}
+
+/* CheckBoxes personalisees - Code inspiree de w3Schools */
+
+.custom_checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.custom_checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 3px;
+}
+
+/* On mouse-over, add a grey background color */
+
+.custom_checkbox:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+.custom_checkbox input:checked~.checkmark {
+    background-color: var(--medblue);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+
+.custom_checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+
+.custom_checkbox .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 8px;
+    border: solid #FFFFFF;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.custom_control {
+    position: relative;
+    display: flex;
+    min-height: 1.5rem;
+    cursor: pointer;
+}
+
+.light_blue {
+    background-color: var(--medblue);
+}
+
+.btn_block {
+    display: block;
+    width: 100%;
+}

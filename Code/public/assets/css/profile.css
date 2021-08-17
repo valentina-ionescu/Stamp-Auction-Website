@@ -1,0 +1,55 @@
+.fiche_profile{
+  
+    margin: 0 auto;
+    padding: 2em;
+    max-width: 40vw;
+    min-width: 320px;
+}
+.white-panel {
+    text-align: center;
+    background: var(--beige);
+    color: var(--medblue);
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.pn {
+    box-shadow: 0 2px 10px  rgba(0, 0, 0, 0.2);
+}
+.white-panel .white-header {
+    background: #c5d2e5;
+    padding: 10px;
+    color: var(--blue);
+    align-self: stretch;
+
+}
+.img-circle {
+    
+    height: auto;
+    width: 100px;
+    vertical-align: middle;
+}
+.white-panel p {
+    font-weight: 500;
+    text-align: center;
+    
+}
+.white-panel picture{
+    width: 100px;
+    height: 100px;
+    vertical-align: unset;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.white-panel:hover{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+.row.left{
+    padding: 0 20px;
+    width: 100%;
+    justify-content: left;
+}

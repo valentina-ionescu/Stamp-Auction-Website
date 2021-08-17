@@ -1,0 +1,113 @@
+/* Modal */
+
+.modal {
+    transition: transform .3s ease-in-out, opacity .2s ease-in-out;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .9);
+    display: flex;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    padding: 6vw;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.modal--close {
+    opacity: 0;
+    z-index: -1;
+}
+
+.modal--open {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 1;
+}
+
+.modal__content {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.modal__content::after {
+    display: block;
+}
+
+.modal__content--image {
+    left: 0;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    min-width: 75vh;
+}
+
+.modal__close--wrapper {
+    cursor: pointer;
+    position: absolute;
+    right: calc(6vw - 25px);
+    top: calc(6vw - 14px);
+}
+.modal__close--wrapper.small{
+
+    right: calc(35vw - 10px);
+    top: 5px;
+}
+.modal__close--wrapper.small>.modal__close{
+    background: linear-gradient(transparent, transparent 9px, black 9px, black, 11px, transparent 11px), linear-gradient(to right, transparent, transparent 9px, black 9px, black, 11px, transparent 11px);
+}
+
+.modal__close {
+    background: linear-gradient(transparent, transparent 9px, white 9px, white, 11px, transparent 11px), linear-gradient(to right, transparent, transparent 9px, white 9px, white, 11px, transparent 11px);
+    cursor: pointer;
+    height: 20px;
+    transform: rotate(45deg);
+    transition: transform .2s ease;
+    width: 20px;
+    border: none;
+}
+
+.modal__close--wrapper:hover .modal__close {
+    transform: rotate(0);
+}
+
+.overflow-y--hidden {
+    overflow-y: hidden;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    
+}
+.formOffer>input, select {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	height: 30px;
+	padding-left: 10px;
+	font-size: 16px;
+	font-family: 'PT Serif';
+}
+
+.formOffer>input {
+	width: 100px;
+}
+
+.formOffer>select {
+	width: 250px;
+}
+
+.formOffer{
+    background: #ffffff;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
